@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         useClient(httpClient -> {
             try {
-                final Apod apod = getApod(httpClient);
+                final var apod = getApod(httpClient);
                 final var url = apod.url();
                 final var fileName = url.substring(url.lastIndexOf('/') + 1);
                 saveImageFromWeb(httpClient, url, fileName);
