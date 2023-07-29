@@ -1,9 +1,11 @@
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public record Apod(
         String date,
         String explanation,
         String hdurl,
-        String media_type,
-        String service_version,
+        @JsonProperty("media_type") String mediaType,
+        @JsonProperty("service_version") String serviceVersion,
         String title,
         String url
 ) {
