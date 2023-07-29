@@ -1,4 +1,4 @@
-rootProject.name = "name"
+rootProject.name = "cats-request"
 
 
 pluginManagement {
